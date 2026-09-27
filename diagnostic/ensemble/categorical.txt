@@ -1,0 +1,40 @@
+N (Regional nodes affected)_0.0
+N (Regional nodes affected)_1.0
+N (Regional nodes affected)_2.0
+N (Regional nodes affected)_3.0
+Number identifying the lesion in the patient_1
+Number identifying the lesion in the patient_2
+Number identifying the lesion in the patient_3
+Number identifying the lesion in the patient_4
+Side location of the lesion_L
+Side location of the lesion_R
+Classification with respect to other lesions_1.0
+Classification with respect to other lesions_2.0
+Classification with respect to other lesions_3.0
+Source of referral_1
+Source of referral_2
+Type of invasion at CB_1.0
+Type of invasion at CB_2.0
+Istotype at CB_1.0
+Istotype at CB_2.0
+Istotype at CB_3.0
+Istotype at CB_4.0
+Grade at CB_1.0
+Grade at CB_2.0
+Grade at CB_3.0
+Oestrogen receptor status at CB_1.0
+Oestrogen receptor status at CB_2.0
+Progesterone receptor status at CB_1.0
+Progesterone receptor status at CB_2.0
+Her2 overexpression (with immunohystochemistry) at CB_1.0
+Her2 overexpression (with immunohystochemistry) at CB_2.0
+Her2 overexpression (with immunohystochemistry) at CB_3.0
+Disease extent_0.0
+Disease extent_1.0
+Disease extent_2.0
+cT_T0
+cT_T1
+cT_T2
+cT_T3
+cT_T4
+cT_TIs

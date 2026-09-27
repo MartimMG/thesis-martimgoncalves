@@ -1,0 +1,25 @@
+# Commands to create and activate the conda environment
+
+# 1. Navigate to your project directory
+cd "c:\Users\Joao Goncalves\OneDrive\University\Current Projects\thesis"
+
+# 2. Create the conda environment from the YAML file
+conda env create -f environment.yml
+
+# 3. Activate the environment
+conda activate breast-cancer-survival
+
+# 4. (Optional) Install additional packages if needed
+# conda install -c conda-forge package_name
+
+# 5. (Optional) Update packages
+# conda update --all
+
+# 6. To deactivate the environment when done
+# conda deactivate
+
+# 7. To remove the environment (if needed)
+# conda env remove -n breast-cancer-survival
+
+# 8. To export current environment to a new YAML file
+# conda env export > environment_updated.yml

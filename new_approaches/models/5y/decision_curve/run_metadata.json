@@ -1,0 +1,96 @@
+{
+  "generated": "2026-09-01T11:36:29",
+  "notebook": "decision_curve.ipynb",
+  "model_source": "deployed_model/bundle_metadata.json",
+  "library_versions": {
+    "python": "3.11.13",
+    "numpy": "2.3.1",
+    "pandas": "2.3.2",
+    "scipy": "1.16.2",
+    "scikit-learn": "1.7.2",
+    "scikit-survival": "0.25.0",
+    "joblib": "1.5.2",
+    "matplotlib": "3.10.6"
+  },
+  "config": {
+    "repo_root": "../../../",
+    "data_csv": "../../data/data_cox/data.csv",
+    "diagnosis_txt": "../../data/data_cox/diagnosis.txt",
+    "treatment_txt": "../../data/data_cox/treatment.txt",
+    "bundle_metadata": "deployed_model/bundle_metadata.json",
+    "thresholds_report_csv": "deployed_model/thresholds_report.csv",
+    "output_dir": "decision_curve",
+    "event_col": "Regional LN recurrence",
+    "time_col": "Survival days",
+    "administrative_cap_days": 1826.0,
+    "continuous_features": [
+      "Age",
+      "Ki67 positive cells (%) at CB",
+      "Conventional RT fraction",
+      "Total administered dose",
+      "Boost dose administered"
+    ],
+    "model_params": {
+      "alphas": [
+        0.000853168
+      ],
+      "l1_ratio": 1.0,
+      "fit_baseline_model": true
+    },
+    "expected_apparent_c_index": 0.9200067108464055,
+    "n_bootstrap": 300,
+    "bootstrap_seed": 202609,
+    "stratify_on_event": true,
+    "min_oob_events": 3,
+    "progress_every": 25,
+    "ci_alpha": 0.05,
+    "horizons": [
+      365.0,
+      1095.0,
+      1825.0
+    ],
+    "primary_horizon": 1825.0,
+    "time_display_divisor": 365.25,
+    "pt_max": 0.15,
+    "pt_points": 61,
+    "min_flagged": 1,
+    "nb_scale": 1000,
+    "figure_width_in": 7.0,
+    "font_size": 9,
+    "palette": {
+      "model": "#0072B2",
+      "flag_all": "#D55E00",
+      "flag_none": "#333333",
+      "operating_point": "#009E73"
+    },
+    "save_figures": true,
+    "save_tables": true,
+    "n_jobs": -1,
+    "random_seed": 42
+  },
+  "apparent": {
+    "c_index": 0.9200067108464055,
+    "n_nonzero_coef": 9
+  },
+  "bootstrap": {
+    "n_requested": 300,
+    "n_ok": 299,
+    "n_failed": 1,
+    "failure_rate": 0.0033333333333333335,
+    "mean_seconds_per_replicate": 0.5044757347825247
+  },
+  "deployed_operating_point_5y": {
+    "pt_pct": 2.39169941267956,
+    "nb_model_apparent_per_1000": 5.565397704347145,
+    "nb_model_oob_median_per_1000": 3.9461259841918945,
+    "nb_flag_all_oob_median_per_1000": -11.017492294311523
+  },
+  "files_written": [
+    "decision_curve\\figA_decision_curve_oob.png",
+    "decision_curve\\figA_decision_curve_oob.pdf",
+    "decision_curve\\figB_apparent_vs_oob_5y.png",
+    "decision_curve\\figB_apparent_vs_oob_5y.pdf",
+    "decision_curve\\table1_net_benefit_5y.csv",
+    "decision_curve\\table1_net_benefit_5y.tex"
+  ]
+}

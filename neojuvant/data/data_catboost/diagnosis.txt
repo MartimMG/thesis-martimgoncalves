@@ -1,0 +1,15 @@
+Age
+Ki67 positive cells (%) at CB
+N (Regional nodes affected)
+Number identifying the lesion in the patient
+Side location of the lesion
+Classification with respect to other lesions
+Source of referral
+Type of invasion at CB
+Isotype at CB
+Oestrogen receptor status at CB
+Progesterone receptor status at CB
+Disease extent
+Grade at CB
+Her2 overexpression (with immunohystochemistry) at CB
+Cancer stage

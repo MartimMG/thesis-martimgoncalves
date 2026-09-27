@@ -1,0 +1,212 @@
+{
+  "generated": "2026-08-31T16:59:37",
+  "notebook": "calibration.ipynb",
+  "model_source": "deployed_model\\bundle_metadata.json",
+  "library_versions": {
+    "python": "3.11.13",
+    "numpy": "2.3.1",
+    "pandas": "2.3.2",
+    "scipy": "1.16.2",
+    "scikit-learn": "1.7.2",
+    "scikit-survival": "0.25.0",
+    "lifelines": "0.30.0",
+    "statsmodels": "0.14.5",
+    "joblib": "1.5.2",
+    "matplotlib": "3.10.6"
+  },
+  "config": {
+    "repo_root": "../../../",
+    "data_csv": "../../data/data_cox/data.csv",
+    "diagnosis_txt": "../../data/data_cox/diagnosis.txt",
+    "treatment_txt": "../../data/data_cox/treatment.txt",
+    "bundle_metadata": "deployed_model/bundle_metadata.json",
+    "output_dir": "calibration",
+    "id_col": "PERSON_ID",
+    "event_col": "Regional LN recurrence",
+    "time_col": "Survival days",
+    "administrative_cap_days": 1826.0,
+    "continuous_features": [
+      "Age",
+      "Ki67 positive cells (%) at CB",
+      "Conventional RT fraction",
+      "Total administered dose",
+      "Boost dose administered"
+    ],
+    "model_params": {
+      "alphas": [
+        0.000853168
+      ],
+      "l1_ratio": 1.0,
+      "fit_baseline_model": true
+    },
+    "expected_apparent_c_index": 0.9200067108464055,
+    "n_bootstrap": 500,
+    "bootstrap_seed": 202608,
+    "stratify_on_event": true,
+    "min_oob_events": 3,
+    "ipa_min_oob_events": 3,
+    "compute_optimism": true,
+    "progress_every": 25,
+    "horizons": [
+      365.0,
+      730.0,
+      1095.0,
+      1460.0,
+      1825.0
+    ],
+    "plot_horizons": [
+      365.0,
+      1095.0,
+      1825.0
+    ],
+    "primary_horizon": 1825.0,
+    "time_grid_step_days": 15.0,
+    "time_display_divisor": 365.25,
+    "time_display_unit": "years",
+    "n_risk_groups": 4,
+    "loess_frac": 0.5,
+    "loess_space": "cloglog",
+    "ci_alpha": 0.05,
+    "curve_grid_points": 400,
+    "plot_risk_upper_quantile": 0.99,
+    "zone_labels": [
+      "zone_1_low",
+      "zone_2_mid_low",
+      "zone_3_mid_high",
+      "zone_4_high"
+    ],
+    "zone_display_names": [
+      "Low",
+      "Mid-low",
+      "Mid-high",
+      "High"
+    ],
+    "zone_expected_sizes": [
+      1227,
+      1234,
+      276,
+      491
+    ],
+    "figure_width_in": 7.0,
+    "font_size": 9,
+    "palette_calibration": [
+      "#0072B2",
+      "#D55E00"
+    ],
+    "palette_validation": [
+      "#8C8C8C",
+      "#0072B2",
+      "#333333"
+    ],
+    "palette_zones": [
+      "#0072B2",
+      "#56B4E9",
+      "#E69F00",
+      "#D55E00"
+    ],
+    "save_figures": true,
+    "save_tables": true,
+    "n_jobs": -1,
+    "random_seed": 42
+  },
+  "cohort": {
+    "n_patients": 3228,
+    "n_events": 27,
+    "events_by_horizon": {
+      "365": 5,
+      "730": 10,
+      "1095": 16,
+      "1460": 22,
+      "1825": 27
+    },
+    "apparent_c_index": 0.9200067108464055,
+    "n_nonzero_coefficients": 9
+  },
+  "bootstrap": {
+    "n_requested": 500,
+    "n_successful": 495,
+    "n_failed": 5,
+    "failure_modes": {
+      "ValueError: the L1 path diverged: 0 non-finite linear predictors, 1099 rows with a non-finite survival curve": 2,
+      "ValueError: the L1 path diverged: 0 non-finite linear predictors, 232 rows with a non-finite survival curve": 1,
+      "ValueError: the L1 path diverged: 0 non-finite linear predictors, 711 rows with a non-finite survival curve": 1,
+      "ValueError: the L1 path diverged: 0 non-finite linear predictors, 704 rows with a non-finite survival curve": 1
+    },
+    "kinds": [
+      "in-bag",
+      "out-of-bag",
+      "test"
+    ],
+    "mean_oob_rows": 1186.1474747474747,
+    "mean_oob_events": 9.616161616161616,
+    "mean_seconds_per_replicate": 5.976918114747447
+  },
+  "discrimination": {
+    "c_apparent": 0.9200067108464055,
+    "c_apparent_ipcw": 0.8501695166737069,
+    "c_oob_median": 0.8836436170212766,
+    "c_oob_lo": 0.7720692580462832,
+    "c_oob_hi": 0.9561892012494422,
+    "c_inbag_mean": 0.9251400466294388,
+    "c_test_mean": 0.9043825046878482,
+    "c_optimism": 0.020757541941590726,
+    "c_final": 0.8992491689048148,
+    "c_final_lo": 0.8512415338944964,
+    "c_final_hi": 0.947994808442539
+  },
+  "integrated_brier_score": {
+    "horizon_days": 1825.0,
+    "ibs_reference_km": 0.005397812930774979,
+    "ibs_apparent": 0.004925221669680716,
+    "n_replicates_integrated": 495,
+    "ibs_oob_median": 0.005016958000437331,
+    "ibs_oob_lo": 0.0033020870465730132,
+    "ibs_oob_hi": 0.0069828130647171804,
+    "ibs_reference_oob_median": 0.005239492930994494,
+    "ipa_integrated_apparent": 0.08755236003082678,
+    "ipa_integrated_oob": 0.03857085811445626,
+    "ipa_integrated_oob_lo": -0.03800623196869119,
+    "ipa_integrated_oob_hi": 0.10606056774383293,
+    "bs_reference_at_horizon": 0.012840611592078435,
+    "bs_model_at_horizon": 0.012417803209490324,
+    "predicted_variance_at_horizon": 0.0007452730060531107,
+    "bs_best_attainable_at_horizon": 0.012095338586025324,
+    "attainable_gain_captured": 0.4500592459207243,
+    "attainable_gain_captured_lo": -0.9233597587324973,
+    "attainable_gain_captured_hi": 2.6567088163600734
+  },
+  "headline": {
+    "1825d": {
+      "apparent": {
+        "observed": 0.01337299162600214,
+        "predicted": 0.013157468043753066,
+        "OE": 1.0163803234431112,
+        "slope": 1.4026293877938547,
+        "ICI": 0.002572785406346165,
+        "E50": 0.0008558591637844904,
+        "E90": 0.0039179089138658574,
+        "Emax": 0.09678183281760844
+      },
+      "out_of_bag": {
+        "observed": 0.01337299162600214,
+        "predicted": 0.013278479437280078,
+        "OE": 0.9880544764785307,
+        "slope": 1.0494080235577574,
+        "ICI": 0.006793829976874309,
+        "E50": 0.003694434986970036,
+        "E90": 0.012442776115316224,
+        "Emax": 0.173524453759053
+      },
+      "optimism_corrected": {
+        "observed": 0.01337299162600214,
+        "predicted": 0.01308790421684013,
+        "OE": 1.025323524890841,
+        "slope": 1.2072408514084796,
+        "ICI": 0.0019074819349792136,
+        "E50": 0.0007257279294528466,
+        "E90": 0.00283048163122331,
+        "Emax": 0.1745930803165292
+      }
+    }
+  }
+}

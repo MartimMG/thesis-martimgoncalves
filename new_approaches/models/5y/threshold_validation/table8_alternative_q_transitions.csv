@@ -1,0 +1,6 @@
+transition,delta_flagged_lesions,delta_recurrences_captured,marginal_ppv_pct,marginal_nnf
+5% -> 7.5%,66,0,0.0,inf
+7.5% -> 10%,84,2,2.4,42.0
+10% -> 15%,164,2,1.2,82.0
+15% -> 20%,166,1,0.6,166.0
+20% -> 25%,177,1,0.6,177.0

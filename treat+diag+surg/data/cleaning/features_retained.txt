@@ -1,0 +1,22 @@
+Adjuvant chemotherapy_1
+Adjuvant therapy with bio drugs
+Age
+Axillary operation
+Boost dose administered
+Chemotherapy performed_1
+Conventional RT fraction
+Endocrine therapy performed_1
+Ki67 positive cells (%) at CB
+N (Regional nodes affected)
+Progesterone receptor status at CB_0.0
+Radiotherapy (RT) performed
+Radiotherapy on chest wall
+Radiotherapy on internal mammary chain
+Radiotherapy on supraclavicular area
+SLN procedure
+Side location of the lesion
+Source of referral
+State (if hormone therapy prescribed)
+Total administered dose
+Trastuzumab or other drugs
+Treatment in association with chemotherapy

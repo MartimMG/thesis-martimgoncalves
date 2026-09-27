@@ -1,0 +1,36 @@
+variable_name,aggregated_change
+Oestrogen receptor status at CB,13.372417006554985
+Neoadjuvant (Only) therapy with biological drugs,8.526618319256501
+Age,4.241681535745397
+Radiotherapy (RT) performed,3.2060661235516816
+Isotype at CB_4.0,3.1469196688280703
+Grade at CB_3.0,1.8291915666748562
+Progesterone receptor status at CB,1.751164519594517
+Radiotherapy on supraclavicular area,1.6751449112353396
+Ki67 positive cells (%) at CB,1.5068847098113927
+Total administered dose,1.4297914503759706
+Conventional RT fraction,1.42245194692099
+State (if hormone therapy prescribed),1.4070994712601077
+Isotype at CB_1.0,1.3744468380081771
+Diagnostic panel missingness pattern_missing_3,0.9159002489445891
+N (Regional nodes affected)_0.0,0.8708402972900996
+N (Regional nodes affected)_1.0,0.8547961462413608
+Her2 overexpression (with immunohystochemistry) at CB_1.0,0.8001240749799325
+Side location of the lesion,0.7254701401996875
+Grade at CB_2.0,0.6029501927460729
+Chemotherapy performed,0.5120937894478361
+Adjuvant chemotherapy,0.38054308751796084
+Treatment in association with chemotherapy,0.27486949651131193
+Type of invasion at CB,0.210895238616385
+Radiotherapy on chest wall,0.19718806500260536
+Diagnostic panel missingness pattern_complete,0.14999373924998274
+Boost dose administered,0.1410677207736788
+Diagnostic panel missingness pattern_missing_7,0.12277200948959288
+Adjuvant therapy using biological drugs,0.12164685530256518
+N (Regional nodes affected)_23.0,0.08926375871805792
+Isotype at CB_2.0,0.04999328304438962
+Her2 overexpression (with immunohystochemistry) at CB_3.0,0.03733825592746158
+Grade at CB_1.0,0.002019143902700649
+Her2 overexpression (with immunohystochemistry) at CB_2.0,0.0
+Isotype at CB_3.0,0.0
+Radiotherapy on internal mammary chain,0.0

@@ -1,0 +1,29 @@
+Feature,Cox,RSF,GBM,SSVM,Total
+Oestrogen receptor status at CB_0.0,0,1,1,1,3
+Oestrogen receptor status at CB_1.0,0,1,1,1,3
+Istotype at CB_1.0,0,1,1,1,3
+Istotype at CB_4.0,0,0,1,1,2
+Endocrine therapy performed,0,0,1,1,2
+Her2 overexpression (with immunohystochemistry) at CB_2.0,1,0,0,1,2
+Grade at CB_3.0,0,1,1,0,2
+Her2 overexpression (with immunohystochemistry) at CB_1.0,1,0,0,1,2
+Grade at CB_2.0,1,1,0,0,2
+Progesterone receptor status at CB_1.0,1,0,0,0,1
+Type of invasion at CB_1.0,0,1,0,0,1
+Source of referral,0,0,0,1,1
+Chemotherapy performed,0,0,0,1,1
+Radiotherapy on supraclavicular area,0,0,0,1,1
+Classification with respect to other lesions_2.0,1,0,0,0,1
+Ki67 positive cells (%) at CB,0,1,0,0,1
+Radiotherapy (RT) performed,0,1,0,0,1
+Grade at CB_1.0,1,0,0,0,1
+Progesterone receptor status at CB_0.0,1,0,0,0,1
+Number identifying the lesion in the patient_3,1,0,0,0,1
+Adjuvant therapy with bio drugs,0,0,1,0,1
+Age,0,0,1,0,1
+Classification with respect to other lesions_3.0,1,0,0,0,1
+Conventional RT fraction,0,0,1,0,1
+Her2 overexpression (with immunohystochemistry) at CB_3.0,0,0,1,0,1
+Total administered dose,0,1,0,0,1
+State (if hormone therapy prescribed),0,1,0,0,1
+Number identifying the lesion in the patient_4,1,0,0,0,1

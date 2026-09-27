@@ -1,0 +1,12 @@
+Adjuvant therapy using biological drugs
+Radiotherapy on chest wall
+Radiotherapy on supraclavicular area
+Radiotherapy on internal mammary chain
+State (if hormone therapy prescribed)
+Treatment in association with chemotherapy
+Chemotherapy performed
+Adjuvant chemotherapy
+Conventional RT fraction
+Total administered dose
+Boost dose administered
+Neoadjuvant (Only) therapy with biological drugs

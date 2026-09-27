@@ -1,0 +1,81 @@
+=== CELL 14 code len 3733 ===
+# ---------------------------------------------------------------------------
+# Shared setup for the missingness figures.
+#
+# Palette: light chart surface, one categorical hue per series (assigned in fixed
+# order, never cycled), a single-hue ordinal ramp for ordered levels (N0..N3,
+# G1..G3), and a blue-grey-red diverging map for the signed phi heatmap. Colours
+# were checked with a CVD/contrast validator; the aqua and yellow slots fall below
+# 3:1 on this surface, which is why the line chart carries direct end-of-line
+# labels rather than relying on the legend alone.
+# ---------------------------------------------------------------------------
+from itertools import combinations
+from matplotlib.colors import LinearSegmentedColormap
+from matplotlib.gridspec import GridSpec
+from matplotlib.lines import Line2D
+
+# Text and structural chart lines (spines, whiskers, reference lines) render in
+# pure black. GRID (gridlines) and MUTED (a neutral fill for non-highlighted bars)
+# stay a soft grey -- they are backdrop, not something meant to be read as text.
+INK, INK_2, MUTED = '#000000', '#000000', '#898781'
+GRID, AXIS, SURFACE = '#e1e0d9', '#000000', '#ffffff'
+BLUE, ORANGE, AQUA, YELLOW = '#2a78d6', '#eb6834', '#1baf7a', '#eda100'
+# Ordinal ramp starts at step 250, not 100, so the lightest step still clears 2:1
+# against the surface when the figure is printed.
+RAMP = ['#86b6ef', '#3987e5', '#1c5cab', '#0d366b']
+
+plt.rcParams.update({
+    'font.family': 'sans-serif',
+    'font.sans-serif': ['Segoe UI', 'DejaVu Sans', 'Arial'],
+    'font.size': 10, 'text.color': INK, 'axes.labelcolor': INK_2,
+    'axes.edgecolor': AXIS, 'xtick.color': INK_2, 'ytick.color': INK_2,
+    'figure.facecolor': SURFACE, 'axes.facecolor': SURFACE, 'savefig.facecolor': SURFACE,
+})
+
+# The seven pathology / IHC fields that carry essentially all of the missingness.
+# Defined here rather than reused from `numerical_variables` / `categorical_variables`
+# so the figures do not depend on how far down the notebook has been run.
+PATH_COLS = {
+    'Ki67 positive cells (%) at CB': 'Ki67',
+    'Her2 overexpression (with immunohystochemistry) at CB': 'HER2',
+    'Progesterone receptor status at CB': 'PR',
+    'Grade at CB': 'Grade',
+    'Isotype at CB': 'Isotype',
+    'Type of invasion at CB': 'Type of invasion',
+    'Oestrogen receptor status at CB': 'ER',
+}
+ER_COL = 'Oestrogen receptor status at CB'
+PR_COL = 'Progesterone receptor status at CB'
+H2_COL = 'Her2 overexpression (with immunohystochemistry) at CB'
+TIME_COL, EVENT_COL = 'Survival days', 'Regional LN recurrence'
+
+
+N_PATIENTS = len(dataset)
+missing_flags = dataset[list(PATH_COLS)].isna()
+missing_flags.columns = list(PATH_COLS.values())
+
+# Groups induced by the encoder: it adds a missing level to ER, PR and HER2, so the
+# groups it can actually distinguish are 'all three recorded', 'some recorded' and
+# 'none recorded'.
+GORDER = ['Panel recorded', 'Partly missing', 'Panel missing']
+GCOL = {'Panel recorded': BLUE, 'Partly missing': AQUA, 'Panel missing': ORANGE}
+
+
+def panel_groups():
+    pat = dataset[[ER_COL, PR_COL, H2_COL]].isna().apply(
+        lambda r: ''.join('1' if v else '0' for v in r), axis=1)
+    g = pd.Series('Panel recorded', index=dataset.index)
+    g[(pat != '000') & (pat != '111')] = 'Partly missing'
+    g[pat == '111'] = 'Panel missing'
+    return g
+
+
+def save_fig(fig, name):
+    """PNG for the notebook, PDF for the thesis (vector text survives scaling)."""
+    for ext in ('png', 'pdf'):
+        fig.savefig(f'{name}.{ext}', dpi=300, bbox_inches='tight')
+
+
+print(f'n = {N_PATIENTS:,} patients;  {int(dataset[EVENT_COL].sum())} regional-recurrence events')
+print(missing_flags.mean().mul(100).round(2).sort_values(ascending=False).to_string())
+

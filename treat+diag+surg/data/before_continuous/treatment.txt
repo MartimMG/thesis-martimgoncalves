@@ -1,0 +1,20 @@
+Endocrine therapy performed_1
+Adjuvant chemotherapy_1
+Chemotherapy performed_1
+Adjuvant therapy with bio drugs
+Trastuzumab or other drugs
+Conventional RT fraction_2.0
+Conventional RT fraction_3.0
+Conventional RT fraction_>6
+Conventional RT fraction_0.0
+Boost dose administered_2.0
+Boost dose administered_3.0
+Boost dose administered_>6
+Boost dose administered_0.0
+Radiotherapy (RT) performed
+Radiotherapy on chest wall
+Radiotherapy on supraclavicular area
+Radiotherapy on internal mammary chain
+State (if hormone therapy prescribed)
+Treatment in association with chemotherapy
+Total administered dose

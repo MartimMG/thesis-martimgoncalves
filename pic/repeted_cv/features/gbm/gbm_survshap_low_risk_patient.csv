@@ -1,0 +1,49 @@
+variable_name,variable_value,B,aggregated_change
+Ki67 positive cells (%) at CB,90.0,0,31.569455958593355
+Adjuvant therapy with bio drugs,1.0,0,27.760591916715583
+Oestrogen receptor status at CB_0.0,0.0,0,25.180008239171624
+Endocrine therapy performed,1.0,0,17.7200219205518
+Conventional RT fraction,3.0,0,14.328234320465993
+Istotype at CB_1.0,1.0,0,8.767547980944084
+Istotype at CB_4.0,0.0,0,6.847516613241611
+Oestrogen receptor status at CB_1.0,1.0,0,6.2344788702047165
+Age,59.0,0,5.684875600196418
+Total administered dose,43.0,0,4.703703348308974
+Radiotherapy on supraclavicular area,1.0,0,4.5193212739998385
+Side location of the lesion,0.0,0,3.142861551617734
+Radiotherapy on chest wall,1.0,0,2.7362849116054564
+Grade at CB_3.0,0.0,0,2.546661988606545
+Radiotherapy (RT) performed,1.0,0,1.4749914665551145
+Her2 overexpression (with immunohystochemistry) at CB_3.0,0.0,0,1.1769644490007387
+N (Regional nodes affected),1.0,0,0.9023529159466558
+cT_T2,0.0,0,0.6220623200917303
+cT_T1,0.0,0,0.3953746545066238
+Classification with respect to other lesions_3.0,0.0,0,0.34257927392411425
+Grade at CB_1.0,0.0,0,0.3072406161995652
+Adjuvant chemotherapy,0.0,0,0.23550453809718885
+Boost dose administered,3.0,0,0.04341247850388172
+cT_T3,0.0,0,0.013697744862142133
+Grade at CB_2.0,1.0,0,0.0
+Istotype at CB_3.0,0.0,0,0.0
+Istotype at CB_2.0,0.0,0,0.0
+Her2 overexpression (with immunohystochemistry) at CB_2.0,1.0,0,0.0
+Her2 overexpression (with immunohystochemistry) at CB_1.0,0.0,0,0.0
+Classification with respect to other lesions_2.0,0.0,0,0.0
+Disease extent_2.0,1.0,0,0.0
+Disease extent_1.0,0.0,0,0.0
+Chemotherapy performed,1.0,0,0.0
+Number identifying the lesion in the patient_4,0.0,0,0.0
+Number identifying the lesion in the patient_2,0.0,0,0.0
+Type of invasion at CB_0.0,0.0,0,0.0
+Progesterone receptor status at CB_0.0,0.0,0,0.0
+Progesterone receptor status at CB_1.0,1.0,0,0.0
+Radiotherapy on internal mammary chain,0.0,0,0.0
+Number identifying the lesion in the patient_3,0.0,0,0.0
+cT_TIs,0.0,0,0.0
+Source of referral,1.0,0,0.0
+cT_T4,1.0,0,0.0
+State (if hormone therapy prescribed),1.0,0,0.0
+Trastuzumab or other drugs,0.0,0,0.0
+Treatment in association with chemotherapy,1.0,0,0.0
+Type of invasion at CB_1.0,1.0,0,0.0
+cT_unknown,0.0,0,0.0

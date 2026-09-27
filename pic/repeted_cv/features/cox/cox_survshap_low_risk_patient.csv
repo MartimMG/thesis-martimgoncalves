@@ -1,0 +1,49 @@
+variable_name,variable_value,B,aggregated_change
+Her2 overexpression (with immunohystochemistry) at CB_2.0,2.591193878173865,0,1302.268783149629
+Oestrogen receptor status at CB_1.0,0.861356769214109,0,721.3239319232069
+Istotype at CB_1.0,0.861356769214109,0,287.4611173249034
+Radiotherapy (RT) performed,-1.6903085094570331,0,282.1123886887539
+Endocrine therapy performed,-0.7367883976130072,0,128.08776550632064
+Adjuvant therapy with bio drugs,-0.31943828249997,0,105.78258988133014
+Source of referral,-0.7669649888473705,0,105.5107539044817
+Progesterone receptor status at CB_1.0,1.1180339887498947,0,79.21298655055756
+Chemotherapy performed,-0.7071067811865475,0,79.07665732969915
+Her2 overexpression (with immunohystochemistry) at CB_1.0,-1.0377490433255416,0,74.63898225902773
+Grade at CB_3.0,-0.5630925063714729,0,71.12527213329979
+Ki67 positive cells (%) at CB,-0.530313254925764,0,57.54952843831388
+Boost dose administered,-1.0256451881367414,0,56.245344195066
+Oestrogen receptor status at CB_0.0,-0.7367883976130073,0,41.77654775823463
+Radiotherapy on supraclavicular area,-0.677834389404565,0,27.688956516375125
+Trastuzumab or other drugs,-0.137360563948689,0,19.09729035011503
+Classification with respect to other lesions_3.0,-0.4170288281141495,0,10.338154922602095
+cT_T3,-0.19611613513818404,0,8.542854531382932
+cT_T4,-0.137360563948689,0,3.8617234012445407
+Her2 overexpression (with immunohystochemistry) at CB_3.0,-0.4170288281141495,0,2.8405384506877054
+Age,-0.24149607185345387,0,0.0
+Classification with respect to other lesions_2.0,-0.24253562503633302,0,0.0
+Conventional RT fraction,-1.1573605293226257,0,0.0
+Disease extent_1.0,0.0,0,0.0
+Number identifying the lesion in the patient_4,0.0,0,0.0
+Disease extent_2.0,-0.24253562503633302,0,0.0
+Grade at CB_1.0,-0.24253562503633302,0,0.0
+Grade at CB_2.0,0.8291561975888501,0,0.0
+Istotype at CB_2.0,-0.35355339059327373,0,0.0
+Istotype at CB_3.0,0.0,0,0.0
+Istotype at CB_4.0,-0.5630925063714729,0,0.0
+N (Regional nodes affected),-0.5322001448887939,0,0.0
+Number identifying the lesion in the patient_2,-0.28284271247461895,0,0.0
+cT_T2,-0.7977240352174656,0,0.0
+Progesterone receptor status at CB_0.0,-0.7367883976130072,0,0.0
+Radiotherapy on chest wall,0.4767312946227963,0,0.0
+Number identifying the lesion in the patient_3,0.0,0,0.0
+Adjuvant chemotherapy,-0.476731294622796,0,0.0
+Radiotherapy on internal mammary chain,0.0,0,0.0
+Treatment in association with chemotherapy,-0.7669649888473705,0,0.0
+Total administered dose,-1.2792393099076098,0,0.0
+cT_T1,1.2060453783110545,0,0.0
+Type of invasion at CB_1.0,0.5345224838248487,0,0.0
+State (if hormone therapy prescribed),0.7367883976130073,0,0.0
+Side location of the lesion,-0.7367883976130072,0,0.0
+cT_TIs,-0.4170288281141495,0,0.0
+Type of invasion at CB_0.0,-0.4170288281141495,0,0.0
+cT_unknown,0.0,0,0.0

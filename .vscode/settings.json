@@ -1,0 +1,9 @@
+{
+    "python.analysis.autoImportCompletions": false,
+    "cursorpyright.analysis.autoImportCompletions": false,
+    "python.condaPath": "C:\\Users\\Joao Goncalves\\anaconda3\\Scripts\\conda.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\Joao Goncalves\\anaconda3\\envs\\survival-env-2\\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
+}

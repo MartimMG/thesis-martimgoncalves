@@ -1,0 +1,49 @@
+Feature,Importance
+Oestrogen receptor status at CB_0.0,0.4524399520051299
+N (Regional nodes affected),0.08421409209945305
+Radiotherapy (RT) performed,0.07639772847330908
+Ki67 positive cells (%) at CB,0.06626711680002134
+Total administered dose,0.057071277041860616
+Conventional RT fraction,0.04388687631080643
+Classification with respect to other lesions_2.0,0.04376719319543992
+Radiotherapy on chest wall,0.03943206961009439
+Age,0.03796940902822347
+Endocrine therapy performed,0.02943223755917585
+cT_TIs,0.02258207811910499
+Oestrogen receptor status at CB_1.0,0.018304966117969543
+Type of invasion at CB_1.0,0.008845139844302182
+Grade at CB_3.0,0.008630260384015228
+Boost dose administered,0.004585647320758589
+Type of invasion at CB_0.0,0.0045306365663631155
+Adjuvant therapy with bio drugs,0.0010295961870266316
+Treatment in association with chemotherapy,0.0006137233369456912
+Disease extent_2.0,0.0
+Disease extent_1.0,0.0
+Number identifying the lesion in the patient_3,0.0
+cT_T1,0.0
+cT_T2,0.0
+Istotype at CB_4.0,0.0
+Istotype at CB_3.0,0.0
+Istotype at CB_2.0,0.0
+Istotype at CB_1.0,0.0
+cT_T3,0.0
+Classification with respect to other lesions_3.0,0.0
+cT_T4,0.0
+Number identifying the lesion in the patient_4,0.0
+Progesterone receptor status at CB_1.0,0.0
+Number identifying the lesion in the patient_2,0.0
+Her2 overexpression (with immunohystochemistry) at CB_3.0,0.0
+Her2 overexpression (with immunohystochemistry) at CB_2.0,0.0
+Her2 overexpression (with immunohystochemistry) at CB_1.0,0.0
+Grade at CB_2.0,0.0
+Grade at CB_1.0,0.0
+Trastuzumab or other drugs,0.0
+Progesterone receptor status at CB_0.0,0.0
+Source of referral,0.0
+Side location of the lesion,0.0
+Adjuvant chemotherapy,0.0
+Chemotherapy performed,0.0
+State (if hormone therapy prescribed),0.0
+Radiotherapy on internal mammary chain,0.0
+Radiotherapy on supraclavicular area,0.0
+cT_unknown,0.0

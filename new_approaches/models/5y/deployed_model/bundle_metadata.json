@@ -1,0 +1,154 @@
+{
+  "bundle_file": "coxnet_model_bundle.pkl",
+  "bundle_keys": [
+    "X_ref",
+    "best_params_for_calibration",
+    "c_index_train",
+    "coef_df",
+    "continuous_features",
+    "cox_model",
+    "feature_columns",
+    "fitted_threshold_model",
+    "high_cohort_cutoff",
+    "high_cohort_members",
+    "high_reference_horizon",
+    "intermediate_threshold_method",
+    "low_cohort_cutoff",
+    "low_cohort_members",
+    "low_gap_report",
+    "low_reference_horizon",
+    "nonzero_coef_df",
+    "operating_characteristics",
+    "report_time_points",
+    "scaler",
+    "threshold_config",
+    "threshold_result",
+    "thresholds_df",
+    "thresholds_report",
+    "time_points",
+    "x_train_scaled",
+    "y_ref",
+    "y_train",
+    "zone_labels",
+    "zone_summary_table"
+  ],
+  "n_patients": 3228,
+  "n_events": 27,
+  "c_index_train": 0.9257025417330761,
+  "flag_burden": {
+    "365": 0.14993804213135067,
+    "1095": 0.14993804213135067,
+    "1825": 0.14993804213135067
+  },
+  "event_capture": {
+    "365": 1.0,
+    "1095": 0.9375,
+    "1825": 0.7777777777777778
+  },
+  "threshold_config": {
+    "intermediate_threshold_method": "mean_risk",
+    "zone_scheme": "4-zones from t_low, t_intermediate, t_high",
+    "threshold_columns_expected": [
+      "time",
+      "t_low",
+      "t_intermediate",
+      "t_high"
+    ],
+    "high_rule": {
+      "method": "top_q_cohort",
+      "q": 0.15,
+      "reference_horizon": 1825.0
+    },
+    "low_rule": {
+      "method": "bottom_q_gap",
+      "percentile": 35.0,
+      "reference_horizon": 1825.0
+    },
+    "medium_rule": {
+      "method": "mean_risk"
+    },
+    "high_cohort_cutoff": 0.022024396305212024,
+    "high_reference_horizon": 1825.0,
+    "low_cohort_cutoff": 0.0026599908879431982,
+    "low_reference_horizon": 1825.0,
+    "zone_labels": [
+      "zone_1_low",
+      "zone_2_mid_low",
+      "zone_3_mid_high",
+      "zone_4_high"
+    ],
+    "zone_rule": "risk < t_low -> zone_1_low; < t_intermediate -> zone_2_mid_low; < t_high -> zone_3_mid_high; else zone_4_high. A boundary of exactly 0 is not a boundary: where the boundary and the patient's risk are both 0 (days before the first observed event, day 75), the tie resolves to the LOWEST zone. The top zone is equivalently 'risk at high_reference_horizon >= high_cohort_cutoff', decided once and held.",
+    "smoothing": "none - no deployed curve is splined or rolling-mean smoothed",
+    "first_separating_day": 75.0,
+    "derivation_notebook": "threshold_app.ipynb",
+    "validation_notebook": "threshold_2.0_copy.ipynb",
+    "generated": "2026-09-01T19:58:06",
+    "library_versions": {
+      "python": "3.11.13",
+      "numpy": "2.3.1",
+      "pandas": "2.3.2",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "scikit-survival": "0.25.0",
+      "matplotlib": "3.10.6"
+    },
+    "model_params": {
+      "alphas": [
+        0.000621017
+      ],
+      "l1_ratio": 1.0,
+      "fit_baseline_model": true
+    },
+    "threshold_params": {
+      "high_rule": {
+        "method": "top_q_cohort",
+        "q": 0.15,
+        "reference_horizon": 1825.0
+      },
+      "low_rule": {
+        "method": "bottom_q_gap",
+        "percentile": 35.0,
+        "reference_horizon": 1825.0
+      },
+      "n_bootstrap": 50,
+      "low_percentile": 35.0,
+      "low_threshold_method": "bootstrap_percentile",
+      "intermediate_threshold_method": "mean_risk",
+      "high_threshold_method": "roc_utility",
+      "curve_spline_postprocess": "none",
+      "curve_spline_variant": "restricted",
+      "curve_spline_quantiles": [
+        0.1,
+        0.5,
+        0.9
+      ],
+      "curve_spline_knots_within_grid": true,
+      "low_medium_smoothing": {
+        "enabled": false,
+        "window_days": 121
+      },
+      "high_curve_min_knot_time": null,
+      "high_curve_zero_start_time": null,
+      "high_curve_terminal_extrapolation": "flat",
+      "high_eb_shrink_k": 3.0,
+      "eb_support_counts": "cumulative_events",
+      "high_percentile_eb": true,
+      "high_percentile_eb_k": 10.0,
+      "high_percentile_eb_min_events": 10,
+      "high_percentile_eb_monotone": true,
+      "high_percentile_eb_prior": "median",
+      "high_false_positive_cost": 1.0,
+      "high_false_negative_cost": 80,
+      "high_true_positive_cost": 0.0,
+      "high_true_negative_cost": 0.0,
+      "stratified_bootstrap": true,
+      "max_time_bins_for_bootstrap_strata": 3,
+      "prevalence_method": "kaplan_meier",
+      "prevalence_reference_time": null,
+      "utility_weighting": "ipcw",
+      "threshold_estimation_method": "point",
+      "random_state": 12,
+      "verbose": false
+    }
+  }
+}

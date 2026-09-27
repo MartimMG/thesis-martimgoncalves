@@ -1,0 +1,7 @@
+q,lesions_flagged,flag_burden_pct,recurrences_captured,recurrences_total,recurrences_captured_pct,oob_median_capture_pct,oob_ci_lo_pct,oob_ci_hi_pct,oob_n_valid_replicates
+0.05,177,5.5,17,27,63.0,50.0,22.2,75.0,497
+0.075,243,7.5,17,27,63.0,57.1,30.0,83.3,497
+0.10,327,10.1,19,27,70.4,62.5,,,
+0.15,491,15.2,21,27,77.8,70.0,40.0,91.4,497
+0.20,657,20.4,22,27,81.5,75.0,,,
+0.25,834,25.8,23,27,85.2,80.0,,,

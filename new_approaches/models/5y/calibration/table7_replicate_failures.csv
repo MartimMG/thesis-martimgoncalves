@@ -1,0 +1,21 @@
+replicate,seed,error,traceback
+22,4077534002,"ValueError: the L1 path diverged: 0 non-finite linear predictors, 1099 rows with a non-finite survival curve","Traceback (most recent call last):
+  File ""C:\Users\Joao Goncalves\AppData\Local\Temp\ipykernel_19564\3696830243.py"", line 92, in run_replicate
+ValueError: the L1 path diverged: 0 non-finite linear predictors, 1099 rows with a non-finite survival curve
+"
+70,3859641690,"ValueError: the L1 path diverged: 0 non-finite linear predictors, 1099 rows with a non-finite survival curve","Traceback (most recent call last):
+  File ""C:\Users\Joao Goncalves\AppData\Local\Temp\ipykernel_19564\3696830243.py"", line 92, in run_replicate
+ValueError: the L1 path diverged: 0 non-finite linear predictors, 1099 rows with a non-finite survival curve
+"
+187,2519681058,"ValueError: the L1 path diverged: 0 non-finite linear predictors, 232 rows with a non-finite survival curve","Traceback (most recent call last):
+  File ""C:\Users\Joao Goncalves\AppData\Local\Temp\ipykernel_19564\3696830243.py"", line 92, in run_replicate
+ValueError: the L1 path diverged: 0 non-finite linear predictors, 232 rows with a non-finite survival curve
+"
+241,1593906313,"ValueError: the L1 path diverged: 0 non-finite linear predictors, 711 rows with a non-finite survival curve","Traceback (most recent call last):
+  File ""C:\Users\Joao Goncalves\AppData\Local\Temp\ipykernel_19564\3696830243.py"", line 92, in run_replicate
+ValueError: the L1 path diverged: 0 non-finite linear predictors, 711 rows with a non-finite survival curve
+"
+291,2519417133,"ValueError: the L1 path diverged: 0 non-finite linear predictors, 704 rows with a non-finite survival curve","Traceback (most recent call last):
+  File ""C:\Users\Joao Goncalves\AppData\Local\Temp\ipykernel_19564\3696830243.py"", line 92, in run_replicate
+ValueError: the L1 path diverged: 0 non-finite linear predictors, 704 rows with a non-finite survival curve
+"
